@@ -2,10 +2,19 @@
 
 import styled from 'styled-components';
 
+import { User } from '@src-chat/types'
+
 const StyledPage = styled.div`
   .page {
   }
 `;
+
+const user: User = {
+  name: 'User',
+  online: false
+}
+
+console.log(user)
 
 export default async function Index() {
   /*

@@ -1,3 +1,4 @@
-export function types(): string {
-  return 'types';
+export type User = {
+  name: string,
+  online: boolean
 }

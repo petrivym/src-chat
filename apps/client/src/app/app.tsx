@@ -4,11 +4,19 @@ import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
 
+import {User} from '@src-chat/types'
+
 const StyledApp = styled.div`
   // Your style here
 `;
 
+const user: User = {
+  name: "Test",
+  online: true
+}
+
 export function App() {
+  console.log(`Hello: ${user.name} Status: ${user.online}`)
   return (
     <StyledApp>
       <NxWelcome title="client" />
